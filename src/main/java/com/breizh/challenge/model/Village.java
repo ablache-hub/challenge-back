@@ -2,6 +2,7 @@ package com.breizh.challenge.model;
 
 
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,7 +20,6 @@ public @Data class Village {
 
     String name;
     int postCode;
-
 
 
 }
