@@ -17,4 +17,4 @@ j'ai préferè commencer avec la seule table "Village"
 histoire de mettre en place l'entité, le lien avec la BDD, 
 les requêtes CRUD basiques, les premiers liens avec le front etc.
 
-Dans un soucis de praticité, j'utilise d'abord H2 comme GBDD et passerai peut-être plus tard sur MySQL.
+Dans un soucis de praticité, j'utilise d'abord H2 comme GBDD et passerai peut-être plus tard sur MySQL (et vu les problêmes rencontrés par les collègues je vais la jouer safe pour l'instant).
