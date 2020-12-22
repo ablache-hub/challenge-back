@@ -1,17 +1,12 @@
 package com.breizh.challenge.model;
 
-
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
-
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
 public @Data class Village {
-
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

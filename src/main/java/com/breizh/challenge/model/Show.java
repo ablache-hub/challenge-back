@@ -1,11 +1,7 @@
 package com.breizh.challenge.model;
 
 import lombok.Data;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import javax.persistence.*;
-import java.util.Date;
-import java.util.Optional;
 
 @Entity
 public @Data class Show {
@@ -26,7 +22,6 @@ public @Data class Show {
 
 
     public Show() {
-
     }
 
     public Show(String releaseDate, Village village) {

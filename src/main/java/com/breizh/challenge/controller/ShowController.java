@@ -73,6 +73,18 @@ public class ShowController {
         showRepository.save(show);
     }
 
+    @CrossOrigin
+    @PutMapping("/Show/{villageId}")
+    public Show updateShow(@PathVariable Integer villageId, @RequestBody Show show) {
+        Optional<Village> village = villageRepository.findById(villageId);
+        if(villageId != null){
+            show.setVillage(village.get());
+            showRepository.save(show);
+            return show;
+        }
+        return null;
+    }
+
 
 
 

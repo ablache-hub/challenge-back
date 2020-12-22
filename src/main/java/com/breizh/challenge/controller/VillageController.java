@@ -16,14 +16,11 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-
 public class VillageController {
 
-
-    //Appel repo JPA
+    //Link repo JPA
     @Autowired
     private VillageRepository villageRepository;
-
 
     //Get liste villages
     @CrossOrigin
@@ -31,7 +28,6 @@ public class VillageController {
     List<Village> allVillage() {
         return villageRepository.findAll();
     }
-
 
     //Get village par ID
     @CrossOrigin
@@ -56,7 +52,6 @@ public class VillageController {
     public void updateVillage(@RequestBody Village village ) {
         villageRepository.save(village);
     }
-
 
     //Delete un village
     @CrossOrigin
