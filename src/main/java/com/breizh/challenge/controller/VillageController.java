@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.*;
@@ -28,7 +27,7 @@ public class VillageController {
 
     //Get liste villages
     @CrossOrigin
-    @GetMapping(value="/Village")
+    @GetMapping(value= "/Village")
     List<Village> allVillage() {
         return villageRepository.findAll();
     }
@@ -36,7 +35,7 @@ public class VillageController {
 
     //Get village par ID
     @CrossOrigin
-    @GetMapping(value="/Village/{id}")
+    @GetMapping(value= "/Village/{id}")
     public Optional<Village> villageById(@PathVariable int id){
         return villageRepository.findById(id);
     }
@@ -53,7 +52,7 @@ public class VillageController {
 
     //Update un village
     @CrossOrigin
-    @PutMapping(value="/Village")
+    @PutMapping(value= "/Village")
     public void updateVillage(@RequestBody Village village ) {
         villageRepository.save(village);
     }
@@ -61,7 +60,7 @@ public class VillageController {
 
     //Delete un village
     @CrossOrigin
-    @DeleteMapping(value="/Village/{id}")
+    @DeleteMapping(value= "/Village/{id}")
     public void deleteVillage(@PathVariable int id){
         villageRepository.deleteById(id);
     }
